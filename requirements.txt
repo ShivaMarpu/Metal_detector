@@ -5,3 +5,4 @@ torchaudio==2.2.2
 altair==4.2.2
 Pillow
 gdown
+numpy
