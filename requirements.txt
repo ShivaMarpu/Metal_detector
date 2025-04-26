@@ -1,8 +1,7 @@
-streamlit>=1.25.0
-torch==2.2.2
-torchvision==0.17.2
-torchaudio==2.2.2
-altair==4.2.2
-Pillow
-gdown
-numpy>=1.21.0  # Make sure numpy is specified with a version
+
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+Pillow==11.0.0
+gdown==5.2.0
+streamlit==1.44.1
+numpy==2.1.1
