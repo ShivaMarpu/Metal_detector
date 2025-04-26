@@ -97,9 +97,10 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
     st.image(image, caption="Uploaded Image", use_container_width=True)
     
-    # Predict
-    prediction = predict_image(image)
-    properties = metal_properties[prediction]
+    with st.spinner('Predicting...'):
+        # Predict
+        prediction = predict_image(image)
+        properties = metal_properties[prediction]
     
     # Output
     st.success(f"**Predicted Metal: {prediction}**")
